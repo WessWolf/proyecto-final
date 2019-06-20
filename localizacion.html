@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    </head>
+
+<body>
+<p id="demo">Pulsa para ver tu localizaci&oacute;n</p>
+<button onclick="getLocation()">Pulsa aqu&iacute;</button>
+<div id="posicion"></p>
+<div id="mapholder"></div>
+<div id="info"></div>
+
+<script type="text/javascript">
+var x=document.getElementById("demo");
+var y=document.getElementById("info");
+var objImagen = new Image();
+objImagen.src = 'qr1.png';
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+		objImagen;
+    }
+  else{x.innerHTML="Tu navegador no soporta la geolocalizaci&oacute;n.";}
+  }
+
+function showPosition(position)
+  {
+var lat=position.coords.latitude;
+var	lon=position.coords.longitude;
+  var latlon=lat+","+lon;
+  if(lat<=(lat+.03) && lat>=(lat-0.03) && lon<=(lon+0.03) && lon>=(lon-0.03)){
+    y.innerHTML="accede"; 
+    //console.log(objImagen);
+    //objImagen.style.display;
+
+  }
+
+	//y.innerHTML="Latitud: "+(lat+.003);
+	//y.innerHTML+="<br/>Longitud: "+lon;
+  }
+
+function showError(error)
+  {
+  switch(error.code) 
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="El usuario ha denegado el permiso a la localizaci&oacute;n."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="La informaci&oacute;n de la localizaci&oacute;n no est&aacute; disponible."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="El tiempo de espera para buscar la localizaci&oacute;n ha expirado."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="Ha ocurrido un error desconocido."
+      break;
+    }
+  }
+</script>
+
+</body>
+</html>

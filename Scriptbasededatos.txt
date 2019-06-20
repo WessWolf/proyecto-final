@@ -1,0 +1,16 @@
+Scripto de creación de la base de datos:
+
+create database universidad;
+
+use universidad;
+create table alumnos(
+matricula int not null primary key,
+pass varchar (25),
+apepat varchar (25),
+apemat varchar (25),
+nombre varchar (25),
+domicilio varchar (60),
+telefono varchar (13),
+correo varchar (50),
+masivo varchar (2),
+)

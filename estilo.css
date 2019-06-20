@@ -1,0 +1,86 @@
+body{
+	font-family: Comic Sans MS,Comic Sans, cursive;
+}
+form{
+	font-family: Comic Sans MS,Comic Sans, cursive;
+}
+p{
+	font-family: Comic Sans MS,Comic Sans, cursive;
+}
+h2,h1{
+	text-align: center;
+	font-family: Comic Sans MS,Comic Sans, cursive;
+}
+button{
+	border-radius: 25px;
+	background-color: #AD66E8;
+	border-color: #AD66E8;
+	text-align: center;
+	min-width: 150px;
+}
+.container{
+	text-align: center;
+	max-width:300px; 	
+	height: auto;
+	background-color: #4ccc;
+	margin: 2% auto;
+	border-radius: 15px;
+	padding-bottom:1rem;
+	padding: 1px;
+}
+input{
+	min-width: 250px;
+	border-radius: 25px;
+}
+.center{
+	text-align: center;
+	max-width:800px;
+	height: auto;
+	background-color: #AD66E8;
+	margin: 2% auto;
+	border-radius: 15px;
+	padding-bottom:1rem;
+	padding: 1px;
+}
+.main{
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 400px;
+	text-align: left;
+	max-width:750px;
+	height: 500px;
+	background-color: #AD66E8;
+	margin: 2% auto;
+	border-radius: 15px;
+	padding-bottom:1rem;
+}
+.news{
+	float: left;
+	text-align: left;
+	max-width:500px;
+	height: auto;
+	background-color: #AB66E8;
+	margin: 2% auto;
+	border-radius: 15px;
+	padding-bottom:1rem;
+}
+.contentbox{
+	float: right;
+	padding: 15px;
+	text-align: left;
+	max-width:250px;
+	height: auto;
+	background-color: #8E66E8;
+	margin: 2% auto;
+	border-radius: 25px;
+	padding-bottom:1rem;
+}
+.box1{
+	padding: 1px;
+	text-align: center;
+	max-width:250px;
+	height: auto;
+	background-color: #AD66E8;
+	margin: 2% auto;
+	border-radius: 15px;
+}

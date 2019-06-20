@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<h2>Registra tus datos</h2>
+</head>
+<body style="background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(recursos/fondo.jpg);
+	color: black;">
+<div class="container">
+	<form action="registroperfilcon.php" method="POST" name="formulario">
+	<br><label>Matricula:</label><br>
+	<input type="text" name="matricula"><br>
+	<label>Contraseña: </label><br>
+	<input type="text" name="pass"><br>
+	<label>Apellido paterno: </label><br>
+	<input type="text" name="apepat"><br>
+	<label>Apellido materno: </label><br>
+	<input type="text" name="apemat"><br>
+	<label>Nombre: </label><br>
+	<input type="text" name="nombre"><br>
+	<label>Domicilio: </label><br>
+	<input type="text" name="domicilio"><br>
+	<label>Telefono: </label><br>
+	<input type="text" name="telefono"><br>
+	<label>Correo electronico: </label><br>
+	<input type="text" name="correo"><br>
+	<input type="submit" name="Insert" value="Insert Data">
+	</form>
+</div>
+</body>
+</html>
